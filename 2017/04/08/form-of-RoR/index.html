@@ -3,14 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>RoR表单：由浅入深 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="本文主要对Ruby on Rails中，实现表单的几种方式进行梳理总结。
+0. 约定model以Rails101实例中的Group model为例，包括两个字段：title和desc。使用下列代码生成 Group model。1rails g model group title:string desc:text
+主要包括以下几种生成表单的方法：
+1. form_for 原始表单1234567891">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RoR表单：由浅入深">
+<meta property="og:url" content="http://yoursite.com/2017/04/08/form-of-RoR/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文主要对Ruby on Rails中，实现表单的几种方式进行梳理总结。
+0. 约定model以Rails101实例中的Group model为例，包括两个字段：title和desc。使用下列代码生成 Group model。1rails g model group title:string desc:text
+主要包括以下几种生成表单的方法：
+1. form_for 原始表单1234567891">
+<meta property="og:updated_time" content="2017-04-08T14:37:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="RoR表单：由浅入深">
+<meta name="twitter:description" content="本文主要对Ruby on Rails中，实现表单的几种方式进行梳理总结。
+0. 约定model以Rails101实例中的Group model为例，包括两个字段：title和desc。使用下列代码生成 Group model。1rails g model group title:string desc:text
+主要包括以下几种生成表单的方法：
+1. form_for 原始表单1234567891">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +72,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-form-of-RoR" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-form-of-RoR" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/04/08/form-of-RoR/" class="article-date">
   <time datetime="2017-04-08T14:01:35.000Z" itemprop="datePublished">2017-04-08</time>
@@ -74,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/08/form-of-RoR/">RoR表单：由浅入深</a>
+    <h1 class="article-title" itemprop="name">
+      RoR表单：由浅入深
     </h1>
   
 
@@ -101,83 +112,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/26/hello-world/" class="article-date">
-  <time datetime="2017-03-26T12:08:47.000Z" itemprop="datePublished">2017-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/26/hello-world/">使用Atom书写markdown</a>
-    </h1>
+    <a href="/2017/03/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">使用Atom书写markdown</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="为Atom安装markdown相关的Packages"><a href="#为Atom安装markdown相关的Packages" class="headerlink" title="为Atom安装markdown相关的Packages"></a>为Atom安装markdown相关的Packages</h3><blockquote>
-<p>markdown-writer</p>
-<p>markdown-preview</p>
-</blockquote>
-<h3 id="添加keymap"><a href="#添加keymap" class="headerlink" title="添加keymap"></a>添加keymap</h3><p>安装后，编辑.md文件时我们发现，快捷键不起作用。</p>
-<p>为了使用快捷键，我们把以下代码加入到keymap.cson文件中。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># for markdown-writer</span></div><div class="line"><span class="string">".platform-darwin atom-text-editor:not([mini])"</span>:</div><div class="line">  <span class="string">"shift-cmd-K"</span>: <span class="string">"markdown-writer:insert-link"</span></div><div class="line">  <span class="string">"shift-cmd-I"</span>: <span class="string">"markdown-writer:insert-image"</span></div><div class="line">  <span class="string">"cmd-i"</span>:       <span class="string">"markdown-writer:toggle-italic-text"</span></div><div class="line">  <span class="string">"cmd-b"</span>:       <span class="string">"markdown-writer:toggle-bold-text"</span></div><div class="line">  <span class="string">"cmd-'"</span>:       <span class="string">"markdown-writer:toggle-code-text"</span></div><div class="line">  <span class="string">"cmd-k"</span>:     <span class="string">"markdown-writer:toggle-keystroke-text"</span></div><div class="line">  <span class="string">"cmd-h"</span>:      <span class="string">"markdown-writer:toggle-strikethrough-text"</span></div><div class="line">  <span class="string">'cmd-&gt;'</span>:       <span class="string">"markdown-writer:toggle-blockquote"</span></div><div class="line">  <span class="string">'cmd-"'</span>:       <span class="string">"markdown-writer:toggle-codeblock-text"</span></div><div class="line">  <span class="string">"ctrl-alt-1"</span>:  <span class="string">"markdown-writer:toggle-h1"</span></div><div class="line">  <span class="string">"ctrl-alt-2"</span>:  <span class="string">"markdown-writer:toggle-h2"</span></div><div class="line">  <span class="string">"ctrl-alt-3"</span>:  <span class="string">"markdown-writer:toggle-h3"</span></div><div class="line">  <span class="string">"ctrl-alt-4"</span>:  <span class="string">"markdown-writer:toggle-h4"</span></div><div class="line">  <span class="string">"ctrl-alt-5"</span>:  <span class="string">"markdown-writer:toggle-h5"</span></div><div class="line">  <span class="string">"shift-cmd-O"</span>: <span class="string">"markdown-writer:toggle-ol"</span></div><div class="line">  <span class="string">"shift-cmd-U"</span>: <span class="string">"markdown-writer:toggle-ul"</span></div><div class="line">  <span class="string">"cmd-j cmd-p"</span>: <span class="string">"markdown-writer:jump-to-previous-heading"</span></div><div class="line">  <span class="string">"cmd-j cmd-n"</span>: <span class="string">"markdown-writer:jump-to-next-heading"</span></div><div class="line">  <span class="string">"cmd-j cmd-d"</span>: <span class="string">"markdown-writer:jump-to-reference-definition"</span></div><div class="line">  <span class="string">"cmd-j cmd-t"</span>: <span class="string">"markdown-writer:jump-to-next-table-cell"</span></div></pre></td></tr></table></figure>
-<p>附：打开keymap.cson的方法</p>
-<blockquote>
-<p>快捷键呼出Command Palette，输入keymap，atom会根据，将Application:Open Your Keymap置顶显示）<br>在 <code>command Palette</code> 中使用 <code>Windows:Reload</code>命令重启Atom，使刚才的设置生效。</p>
-</blockquote>
-<p>此时就可以利用上面设置的快捷键，快速完成markdown的书写了。</p>
-<h3 id="markdown常用格式及快捷键"><a href="#markdown常用格式及快捷键" class="headerlink" title="markdown常用格式及快捷键"></a>markdown常用格式及快捷键</h3><h4 id="1至5级标题"><a href="#1至5级标题" class="headerlink" title="1至5级标题"></a>1至5级标题</h4><blockquote>
-<p>ctrl + alt + (1~5)</p>
-</blockquote>
-<h4 id="正文粗体（bold-text）-／-斜体（italic-text）"><a href="#正文粗体（bold-text）-／-斜体（italic-text）" class="headerlink" title="正文粗体（bold-text） ／ 斜体（italic-text）"></a>正文粗体（bold-text） ／ 斜体（italic-text）</h4><blockquote>
-<p>bold-text : ctrl + b</p>
-<p>italic-text: ctrl + i</p>
-</blockquote>
-<p>正文 <strong>粗体</strong> 或者 <em>斜体</em> <code>正文**粗体**或者_斜体_</code></p>
-<h4 id="文字引用"><a href="#文字引用" class="headerlink" title="文字引用"></a>文字引用</h4><blockquote>
-<p>ctrl + &gt; (需要shift的帮助)</p>
-</blockquote>
-<p><em>备注：不建议使用此快捷键，因为正常敲<code>&gt;</code>符号只需要按两个键就够了</em></p>
-<h4 id="内嵌代码"><a href="#内嵌代码" class="headerlink" title="内嵌代码"></a>内嵌代码</h4><p><code>单行代码 command + ’</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#多行代码</span></div><div class="line"><span class="string">"cmd-'"</span>:       <span class="string">"markdown-writer:toggle-code-text"</span></div><div class="line"><span class="string">'cmd-"'</span>:       <span class="string">"markdown-writer:toggle-codeblock-text"</span></div></pre></td></tr></table></figure>
-<h4 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h4><blockquote>
-<p>shift + cmd + k</p>
-</blockquote>
-<p><a href="https://caozhens.github.io" target="_blank" rel="external">我的博客主页</a></p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/26/hello-world/" data-id="cj19ccgmz0001w8fy54iohgeu" class="article-share-link">Delen</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
