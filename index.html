@@ -1,93 +1,1146 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+
+
+
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
 
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-form-of-RoR" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/08/form-of-RoR/" class="article-date">
-  <time datetime="2017-04-08T14:01:35.000Z" itemprop="datePublished">2017-04-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/08/form-of-RoR/">RoR表单的几种实现方式：由浅入深</a>
-    </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/16/mysql_start_stop_in_macos/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/16/mysql_start_stop_in_macos/" itemprop="url">在MacOS上开启／关闭／重启Mysql服务</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-16T10:14:47+08:00">
+                2017-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mysql-MacOS/" itemprop="url" rel="index">
+                    <span itemprop="name">Mysql MacOS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>本文主要对Ruby on Rails中，实现表单的几种方式进行梳理总结。</p>
-<h3 id="0-约定model"><a href="#0-约定model" class="headerlink" title="0. 约定model"></a>0. 约定model</h3><p>以Rails101实例中的<code>Group model</code>为例来创建表单。 <code>Group model</code>包括两个字段：<code>title</code>和<code>desc</code>。使用下列代码生成 <code>Group model</code>。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails g model group title:string desc:text</div></pre></td></tr></table></figure></p>
-<p>在<strong>CRUD</strong>方法中，<strong>C</strong>和<strong>U</strong>均需要在<code>html.erb</code>文件中定义表单。表单的实现主要包括以下几种方式：</p>
+      
+
+      
+        
+          
+            <h2 id="图形界面操作"><a href="#图形界面操作" class="headerlink" title="图形界面操作"></a>图形界面操作</h2><p>直接通过<code>System Preferences - MySQL</code>开启关闭Mysql:</p>
+<p><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516104350.png" alt=""></p>
+<h2 id="Terminal命令行操作"><a href="#Terminal命令行操作" class="headerlink" title="Terminal命令行操作"></a>Terminal命令行操作</h2><h3 id="全局命令mysql-server"><a href="#全局命令mysql-server" class="headerlink" title="全局命令mysql.server"></a>全局命令<code>mysql.server</code></h3><h4 id="直接执行全局命令"><a href="#直接执行全局命令" class="headerlink" title="直接执行全局命令"></a>直接执行全局命令</h4><ul>
+<li>启动: <code>mysql.server start</code></li>
+<li>关闭: <code>mysql.server stop</code></li>
+<li>重启: <code>mysql.server restart</code></li>
+</ul>
+<h4 id="Problem-Issue-2-mysql-server-command-not-found"><a href="#Problem-Issue-2-mysql-server-command-not-found" class="headerlink" title="Problem Issue #2 - mysql.server command not found"></a>Problem Issue #2 - mysql.server command not found</h4><p>如果找不到<code>mysql.server</code>命令:<br><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516102318.png" alt=""></p>
+<p>这时需要在安装目录<code>/usr/local/mysql/support-files/mysql.server</code>中找到mysql.server工具</p>
+<h4 id="在安装目录下执行mysql-server工具"><a href="#在安装目录下执行mysql-server工具" class="headerlink" title="在安装目录下执行mysql.server工具"></a>在安装目录下执行mysql.server工具</h4><ul>
+<li>启动: <code>sudo /usr/local/mysql/support-files/mysql.server start</code></li>
+<li>关闭: <code>sudo /usr/local/mysql/support-files/mysql.server stop</code></li>
+<li>重启: <code>sudo /usr/local/mysql/support-files/mysql.server restart</code></li>
+</ul>
+<h4 id="Problem-Issue-3-Startup-with-ERROR-The-server-quit-without-updating-PID-file"><a href="#Problem-Issue-3-Startup-with-ERROR-The-server-quit-without-updating-PID-file" class="headerlink" title="Problem Issue #3 - Startup with ERROR! The server quit without updating PID file"></a>Problem Issue #3 - Startup with ERROR! The server quit without updating PID file</h4><p><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516133223.png" alt=""></p>
+<p> 原因排查：</p>
+<ol>
+<li><p>关于my.cnf文件<br>根据mysql forum上的描述，OSX系统中的mysql默认不需要my.cnf配置文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">By default, the OS X installation does not use a my.cnf, and MySQL just uses the default values.</div><div class="line">To set up your own my.cnf, you could just create a file straight in /etc,</div><div class="line">or do the following ...</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看错误日志（后缀<code>.err</code>）<br>日志文件位于<code>／usr/local/mysql/your_computer_name.local.err</code></p>
+</li>
+</ol>
+<ol>
+<li>检查mysql数据目录<code>/usr/local/mysql/data</code>的访问权限</li>
+</ol>
+<p><strong>这里需要注意的是，Mac OS系统下，mysql 的用户组和用户名都是<code>_mysql</code>，Linux 是<code>mysql</code></strong></p>
+<p>无法访问：<br><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516144041.png" alt=""></p>
+<p>查看访问权限<br><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516144135.png" alt=""></p>
+<p>修改访问权限<br><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516144251.png" alt=""></p>
+<ol>
+<li><p>检查mysql数据目录中全部文件的访问权限<br><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516145120.png" alt=""></p>
+<ol>
+<li>可能已经存在mysql进程<br>使用<code>ps -ef|grep mysqld</code>查看是否有mysqld进程</li>
+</ol>
+</li>
+</ol>
+<p><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516131531.png" alt=""></p>
+<p> 如果有，使用<code>sudo kill -9 ###(PID)</code>杀死<br> <img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516142051.png" alt=""></p>
+<p> 再次查看：<br> <img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516133848.png" alt=""></p>
+<h4 id="可使用mysql-server开启／关闭"><a href="#可使用mysql-server开启／关闭" class="headerlink" title="可使用mysql.server开启／关闭"></a>可使用mysql.server开启／关闭</h4><p><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516145348.png" alt=""></p>
+<p><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170516145442.png" alt=""></p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p> [1] <a href="http://stackoverflow.com/questions/4963171/mysql-server-startup-error-the-server-quit-without-updating-pid-file" target="_blank" rel="external">http://stackoverflow.com/questions/4963171/mysql-server-startup-error-the-server-quit-without-updating-pid-file</a></p>
+<p> [2] <a href="https://forums.mysql.com/read.php?11,366143,376017#msg-376017" target="_blank" rel="external">https://forums.mysql.com/read.php?11,366143,376017#msg-376017</a></p>
+<p> [3] <a href="https://www.flyweb.at/blog/network/1001/error-mysql-server-pid-file-could-not-be-found" target="_blank" rel="external">https://www.flyweb.at/blog/network/1001/error-mysql-server-pid-file-could-not-be-found</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/11/css_basic_1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/11/css_basic_1/" itemprop="url">CSS学习笔记 — 基础篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-11T15:35:52+08:00">
+                2017-05-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h4><ul>
+<li>CSS —— Cascading Style Sheets 层叠样式表</li>
+<li>样式 —— 定义了如何显示HTML元素</li>
+<li>层叠 —— 多个CSS定义可以层叠合一</li>
+</ul>
+<h4 id="定义样式的三种方式"><a href="#定义样式的三种方式" class="headerlink" title="定义样式的三种方式"></a>定义样式的三种方式</h4><h5 id="内联样式-在HTML元素内部"><a href="#内联样式-在HTML元素内部" class="headerlink" title="内联样式(在HTML元素内部)"></a>内联样式(在HTML元素内部)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;h3 style=&quot;color:brown&quot;&gt;内联样式&lt;/h3&gt;</div></pre></td></tr></table></figure>
+<h5 id="内部样式-在-lt-head-gt-标签内部，直接写"><a href="#内部样式-在-lt-head-gt-标签内部，直接写" class="headerlink" title="内部样式(在&lt;head&gt;标签内部，直接写)"></a>内部样式(在<code>&lt;head&gt;</code>标签内部，直接写)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">      body &#123;</div><div class="line">         font-family: Verdana, sans-serif;</div><div class="line">      &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<h5 id="外部样式-在-lt-head-gt-标签内部，写css文件的引用声明"><a href="#外部样式-在-lt-head-gt-标签内部，写css文件的引用声明" class="headerlink" title="外部样式(在&lt;head&gt;标签内部，写css文件的引用声明)"></a>外部样式(在<code>&lt;head&gt;</code>标签内部，写css文件的引用声明)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle_basic_1.css&quot; /&gt;</div></pre></td></tr></table></figure>
+<h4 id="层叠优先级"><a href="#层叠优先级" class="headerlink" title="层叠优先级"></a>层叠优先级</h4><p>内联样式 &gt; 内部样式 &gt; 外部样式 &gt; 浏览器缺省设置</p>
+<h3 id="尺寸-px-em-的区别"><a href="#尺寸-px-em-的区别" class="headerlink" title="尺寸(px / em / % 的区别)"></a>尺寸(px / em / % 的区别)</h3><h4 id="px-pixels"><a href="#px-pixels" class="headerlink" title="px (pixels)"></a>px (pixels)</h4><ul>
+<li>像素值</li>
+<li>px是绝对单位，它的取值是固定的</li>
+<li>如果使用px，在IE浏览器中不支持字体缩放</li>
+</ul>
+<h4 id="em"><a href="#em" class="headerlink" title="em"></a>em</h4><ul>
+<li>em是相对单位，它的取值是可以变化的</li>
+<li>1em = <code>当前的</code>或者<code>父元素</code>的<code>font-size</code></li>
+<li>任意浏览器的default font-size=16px，此时<code>1em=16px</code>,即<code>10px=0.625em</code></li>
+</ul>
+<h4 id="百分比"><a href="#百分比" class="headerlink" title="% 百分比"></a>% 百分比</h4><ul>
+<li>%是相对值</li>
+</ul>
+<h3 id="块级元素与内联元素"><a href="#块级元素与内联元素" class="headerlink" title="块级元素与内联元素"></a>块级元素与内联元素</h3><h4 id="display属性"><a href="#display属性" class="headerlink" title="display属性"></a>display属性</h4><p>display是css中最重要的用于控制布局的属性</p>
+<p>每个元素都有一个默认的display取值（与元素的类型有关）</p>
+<p>取值</p>
+<ul>
+<li>block 块级元素</li>
+<li>inline 内联元素</li>
+<li><p>none 隐藏</p>
+</li>
+<li><p><code>&lt;div&gt;</code>是块级元素，<code>display:block</code></p>
+</li>
+</ul>
+<h4 id="width-amp-height属性"><a href="#width-amp-height属性" class="headerlink" title="width &amp; height属性"></a>width &amp; height属性</h4><ul>
+<li>div的width和height属性缺省值为100%（重新开始一行并尽可能占满整个容器）,且可以设置</li>
+<li>span的width和height属性缺省值为auto，且不可设置</li>
+</ul>
+<h4 id="内部文字"><a href="#内部文字" class="headerlink" title="内部文字"></a>内部文字</h4><ul>
+<li>div的内部文字如果超过了范围，会溢出</li>
+<li>span会根据内部文字自动调整width和height</li>
+</ul>
+<h4 id="窗口缩放"><a href="#窗口缩放" class="headerlink" title="窗口缩放"></a>窗口缩放</h4><ul>
+<li>div如果由于窗口缩放导致显示不下，将会被直接截断</li>
+<li>span将自动换行</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/09/html_basic_3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/09/html_basic_3/" itemprop="url">HTML学习笔记 — 基础篇(三)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T14:57:13+08:00">
+                2017-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-表单-form"><a href="#1-表单-form" class="headerlink" title="1. 表单 form"></a>1. 表单 form</h2><h3 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h3><h4 id="input元素"><a href="#input元素" class="headerlink" title="input元素"></a>input元素</h4><h5 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h5><ul>
+<li>text</li>
+<li>radio</li>
+<li>submit</li>
+</ul>
+<h5 id="action属性"><a href="#action属性" class="headerlink" title="action属性"></a>action属性</h5><h5 id="method属性"><a href="#method属性" class="headerlink" title="method属性"></a>method属性</h5><h5 id="name属性"><a href="#name属性" class="headerlink" title="name属性"></a>name属性</h5><p>如果要正确地被提交，每个输入字段必须设置一个name属性</p>
+<h5 id="fieldset组合"><a href="#fieldset组合" class="headerlink" title="fieldset组合"></a>fieldset组合</h5>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/09/html_basic_2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/09/html_basic_2/" itemprop="url">HTML学习笔记 — 基础篇(二)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T09:44:57+08:00">
+                2017-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-块-div-和-span"><a href="#1-块-div-和-span" class="headerlink" title="1. 块 (div 和 span)"></a>1. 块 (div 和 span)</h3><p><strong>div</strong>与<strong>span</strong>的区别：div是块级元素，span是内联元素</p>
+<blockquote>
+<p><strong>block level element &amp; inline element (块级元素 &amp; 内联元素) </strong><br>block level element</p>
+<ul>
+<li>浏览器显示时，块元素<strong>占据全部可用宽度，且以新行来开始和结束</strong></li>
+<li>例如：<code>&lt;h1&gt; &lt;p&gt; &lt;div&gt; &lt;ul&gt; &lt;table&gt;</code></li>
+</ul>
+<p>inline element</p>
+<ul>
+<li>浏览器显示时，通常不会以新行开始</li>
+<li>例如：<code>&lt;img&gt; &lt;a&gt;</code></li>
+</ul>
+</blockquote>
+<h3 id="2-链接-a"><a href="#2-链接-a" class="headerlink" title="2.链接 - a"></a>2.链接 - a</h3><h4 id="使用a标签的两种方式"><a href="#使用a标签的两种方式" class="headerlink" title="使用a标签的两种方式"></a>使用a标签的两种方式</h4><ul>
+<li>使用<strong>href</strong>属性创建链接</li>
+<li>使用<strong>name</strong>属性创建锚点</li>
+</ul>
+<h4 id="无下划线的链接"><a href="#无下划线的链接" class="headerlink" title="无下划线的链接"></a>无下划线的链接</h4><h4 id="在新窗口打开链接"><a href="#在新窗口打开链接" class="headerlink" title="在新窗口打开链接"></a>在新窗口打开链接</h4><h3 id="3-图像-img"><a href="#3-图像-img" class="headerlink" title="3.图像 - img"></a>3.图像 - img</h3><h4 id="设置可替换文本（alt）"><a href="#设置可替换文本（alt）" class="headerlink" title="设置可替换文本（alt）"></a>设置可替换文本（alt）</h4><h3 id="4-表格-table"><a href="#4-表格-table" class="headerlink" title="4.表格 - table"></a>4.表格 - table</h3><h4 id="无边框-amp-有边框表格"><a href="#无边框-amp-有边框表格" class="headerlink" title="无边框 &amp; 有边框表格"></a>无边框 &amp; 有边框表格</h4><h4 id="表格的表头"><a href="#表格的表头" class="headerlink" title="表格的表头"></a>表格的表头</h4><h4 id="表格的标题"><a href="#表格的标题" class="headerlink" title="表格的标题"></a>表格的标题</h4><h4 id="空单元格-amp-nbsp"><a href="#空单元格-amp-nbsp" class="headerlink" title="空单元格 &amp;nbsp"></a>空单元格 &amp;nbsp</h4><h4 id="跨行或跨列"><a href="#跨行或跨列" class="headerlink" title="跨行或跨列"></a>跨行或跨列</h4><h3 id="5-列表"><a href="#5-列表" class="headerlink" title="5.列表"></a>5.列表</h3><h4 id="无序列表-amp-有序列表"><a href="#无序列表-amp-有序列表" class="headerlink" title="无序列表 &amp; 有序列表"></a>无序列表 &amp; 有序列表</h4><h3 id="6-CSS"><a href="#6-CSS" class="headerlink" title="6.CSS"></a>6.CSS</h3><h4 id="外部样式、内部样式、内联样式"><a href="#外部样式、内部样式、内联样式" class="headerlink" title="外部样式、内部样式、内联样式"></a>外部样式、内部样式、内联样式</h4><p><strong>关于CSS的详细内容请参考</strong></p>
+<h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><ol>
+<li>HTML的四个基本标签是？它们的作用与区别是？</li>
+<li>div与span的区别？</li>
+<li>class与id的区别？</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/17/html_basic_1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/17/html_basic_1/" itemprop="url">HTML学习笔记 — 基础篇(一)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-17T13:48:45+08:00">
+                2017-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-基本概念（HTML-／-标签-／-文档-／-浏览器）"><a href="#1-基本概念（HTML-／-标签-／-文档-／-浏览器）" class="headerlink" title="1. 基本概念（HTML ／ 标签 ／ 文档 ／ 浏览器）"></a>1. 基本概念（HTML ／ 标签 ／ 文档 ／ 浏览器）</h3><h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><ul>
+<li>HTML — <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage，超文本标记语言</li>
+<li>不是编程语言，而是<strong>标记语言</strong></li>
+<li>标记语言就是一套标记标签</li>
+</ul>
+<h4 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h4><ul>
+<li>上面提到的标记标签，通常被称为<strong>HTML标签</strong></li>
+<li>HTML标签是由尖括号包围的关键字，通常是成对出现的</li>
+<li>开始标签&amp;结束标签 ／ 开放标签&amp;闭合标签</li>
+</ul>
+<h4 id="HTML文档"><a href="#HTML文档" class="headerlink" title="HTML文档"></a>HTML文档</h4><ul>
+<li>HTML文档 = HTML标签 + 纯文本 = 网页</li>
+</ul>
+<h4 id="web浏览器"><a href="#web浏览器" class="headerlink" title="web浏览器"></a>web浏览器</h4><ul>
+<li>读取HTML文档，并以网页的形式显示出来</li>
+<li>浏览器不会显示HTML标签，而是用标签来解释页面的内容</li>
+</ul>
+<h3 id="2-标签"><a href="#2-标签" class="headerlink" title="2.标签"></a>2.标签</h3><h4 id="基本标签"><a href="#基本标签" class="headerlink" title="基本标签"></a>基本标签</h4><p>h / p / a / img</p>
+<h4 id="空元素标签"><a href="#空元素标签" class="headerlink" title="空元素标签"></a>空元素标签</h4><p>br / hr</p>
+<h4 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h4><p>bold ／ strong ／ big ／ emphasized ／ italic ／ small ／ subscript ／ superscript</p>
+<h4 id="引用标签"><a href="#引用标签" class="headerlink" title="引用标签"></a>引用标签</h4><p>短引用 q</p>
+<p>长引用 blockquote</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/08/form-of-RoR/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/08/form-of-RoR/" itemprop="url">RoR表单的几种实现方式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-08T22:01:35+08:00">
+                2017-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文主要对Ruby on Rails中，实现表单的几种方式进行梳理总结。</p>
+<h3 id="0-约定model"><a href="#0-约定model" class="headerlink" title="0. 约定model"></a>0. 约定model</h3><p>我们以Rails101实例中的<code>Group model</code>为例来创建表单。 <code>Group</code>包括两个字段：<code>title</code>和<code>desc</code>。使用如下代码生成 <code>Group model</code>。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails g model group title:string desc:text</div></pre></td></tr></table></figure></p>
+<p>在<strong>CRUD</strong>方法中，<strong>C</strong>和<strong>U</strong>均需要在<code>.html.erb</code>文件中使用表单。主要包括以下几种方式：</p>
 <h3 id="1-form-for-原始表单"><a href="#1-form-for-原始表单" class="headerlink" title="1. form_for 原始表单"></a>1. form_for 原始表单</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;%= form_for @group <span class="keyword">do</span> |f| %&gt;</div><div class="line">标题</div><div class="line">&lt;br&gt;</div><div class="line">&lt;%= f.text_field :title %&gt;</div><div class="line">&lt;br&gt;</div><div class="line">叙述</div><div class="line">&lt;br&gt;</div><div class="line">&lt;%= f.text.area :desc %&gt;</div><div class="line">&lt;br&gt;</div><div class="line"></div><div class="line">&lt;%= f.submit <span class="string">"Submit"</span>, :disable_with =&gt; <span class="string">"Submitting..."</span>%&gt;</div><div class="line">&lt;% end %&gt;</div></pre></td></tr></table></figure>
-<h3 id="2-在form-for中增加errors消息提示"><a href="#2-在form-for中增加errors消息提示" class="headerlink" title="2. 在form_for中增加errors消息提示"></a>2. 在form_for中增加errors消息提示</h3><p>一般来说，我们会利用<a href="http://guides.rubyonrails.org/active_record_validations.html" target="_blank" rel="external"><code>Active Record Validations</code></a>功能，对model中的某些字段做限制。以<code>Group model</code>为例，限制其title字段不能为空<br><img src="../../images/groupmodel_validations.png =100x20" alt=""><br>Active Record提供了许多内置的Validation Helpers，如上面的<code>presence</code>。</p>
+<h3 id="2-在form-for中增加errors消息提示"><a href="#2-在form-for中增加errors消息提示" class="headerlink" title="2. 在form_for中增加errors消息提示"></a>2. 在form_for中增加errors消息提示</h3><p>一般来说，我们会利用Rails的<a href="http://guides.rubyonrails.org/active_record_validations.html" target="_blank" rel="external"><code>Active Record Validations</code></a>功能，对model中的某些字段做限制。以<code>Group model</code>为例，限制其title字段不能为空</p>
+<p><img src="http://opkslf6o7.bkt.clouddn.com/markdown/20170508165117.png" alt=""></p>
+<p>Active Record提供了许多内置的Validation Helpers，如上面的<code>presence</code>。</p>
 <p>想了解<code>Ruby on Rails</code>中更多的<code>Validation Helpers</code>及用法,请参考文章[]</p>
 <p>在form_for表单中加入errors消息提示功能：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;%= form_for @group <span class="keyword">do</span> |f| %&gt;</div><div class="line">&lt;% <span class="keyword">if</span> @group.errors.any? %&gt;</div><div class="line">&lt;ul&gt;</div><div class="line">  &lt;% @group.errors.full_messages.each <span class="keyword">do</span> |msg| %&gt;</div><div class="line">  &lt;li&gt;&lt;%= msg %&gt;&lt;/li&gt;</div><div class="line">  &lt;% end %&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;% end %&gt;</div><div class="line">标题</div><div class="line">&lt;br&gt;</div><div class="line">&lt;%= f.text_field :title %&gt;</div><div class="line">&lt;br&gt;</div><div class="line">叙述</div><div class="line">&lt;br&gt;</div><div class="line">&lt;%= f.text.area :desc %&gt;</div><div class="line">&lt;br&gt;</div><div class="line">&lt;%= f.submit <span class="string">"Submit"</span>, :disable_with =&gt; <span class="string">"Submitting..."</span>%&gt;</div><div class="line">&lt;% end %&gt;</div></pre></td></tr></table></figure>
@@ -95,42 +1148,117 @@
 <h3 id="4-使用simple-form-for进一步简化表单代码"><a href="#4-使用simple-form-for进一步简化表单代码" class="headerlink" title="4. 使用simple_form_for进一步简化表单代码"></a>4. 使用simple_form_for进一步简化表单代码</h3><p>使用前需要先安装：<br>打开Gemfile，输入 <code>gem &#39;simple_form&#39;</code>,然后在terminal中执行 <code>bundle install</code><br>然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails g simple_form:install --bootstrap</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;%= simple_form_for @group <span class="keyword">do</span> |f| %&gt;</div><div class="line">  &lt;div class=<span class="string">"form-group"</span>&gt;</div><div class="line">    &lt;%= f.input :title, input_html: &#123; class: <span class="string">"form-control"</span>&#125; %&gt;</div><div class="line">    &lt;%= f.input :desc, input_html: &#123; class: <span class="string">"form-control"</span>&#125; %&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;%= f.submit <span class="string">"Submit"</span>, class: <span class="string">"btn btn-primary"</span>, data: &#123; disable_with: <span class="string">"Submitting..."</span> &#125; %&gt;</div><div class="line">&lt;% end %&gt;</div></pre></td></tr></table></figure>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/08/form-of-RoR/" data-id="cj1b8vs1y0000hdfyedztqd4f" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-</article>
+  </article>
 
 
+    
+      
+
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/26/hello-world/" class="article-date">
-  <time datetime="2017-03-26T12:08:47.000Z" itemprop="datePublished">2017-03-26</time>
-</a>
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/26/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="曹振">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/26/hello-world/">使用Atom书写markdown</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/03/26/hello-world/" itemprop="url">使用Atom书写markdown</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-26T20:08:47+08:00">
+                2017-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h3 id="为Atom安装markdown相关的Packages"><a href="#为Atom安装markdown相关的Packages" class="headerlink" title="为Atom安装markdown相关的Packages"></a>为Atom安装markdown相关的Packages</h3><blockquote>
+      
+
+      
+        
+          
+            <h3 id="为Atom安装markdown相关的Packages"><a href="#为Atom安装markdown相关的Packages" class="headerlink" title="为Atom安装markdown相关的Packages"></a>为Atom安装markdown相关的Packages</h3><blockquote>
 <p>markdown-writer</p>
 <p>markdown-preview</p>
 </blockquote>
@@ -160,100 +1288,305 @@
 <p>shift + cmd + k</p>
 </blockquote>
 <p><a href="https://caozhens.github.io" target="_blank" rel="external">我的博客主页</a></p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/26/hello-world/" data-id="cj1b8vs220001hdfyb5hctcpg" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+  </section>
+
   
-</article>
 
 
-  
+          </div>
+          
 
-</section>
+
+          
+
+        </div>
         
-          <aside id="sidebar">
+          
   
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="曹振" />
+          <p class="site-author-name" itemprop="name">曹振</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+
+        </nav>
+
         
-          <li>
-            <a href="/2017/04/08/form-of-RoR/">RoR表单的几种实现方式：由浅入深</a>
-          </li>
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
         
-          <li>
-            <a href="/2017/03/26/hello-world/">使用Atom书写markdown</a>
-          </li>
         
-      </ul>
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
     </div>
-  </div>
+  </aside>
 
-  
-</aside>
+
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">曹振</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
