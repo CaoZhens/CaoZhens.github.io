@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MySQL,MacOS," />
 
 
 
@@ -122,7 +122,7 @@ Problem Issue #2 - mysql.server command not">
 <meta property="og:image" content="http://opkslf6o7.bkt.clouddn.com/markdown/20170516133848.png">
 <meta property="og:image" content="http://opkslf6o7.bkt.clouddn.com/markdown/20170516145348.png">
 <meta property="og:image" content="http://opkslf6o7.bkt.clouddn.com/markdown/20170516145442.png">
-<meta property="og:updated_time" content="2017-05-16T07:50:56.000Z">
+<meta property="og:updated_time" content="2017-05-16T08:32:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在MacOS上开启／关闭／重启Mysql服务">
 <meta name="twitter:description" content="图形界面操作直接通过System Preferences - MySQL开启关闭Mysql:
@@ -147,7 +147,7 @@ Problem Issue #2 - mysql.server command not">
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -170,7 +170,7 @@ Problem Issue #2 - mysql.server command not">
   <title>在MacOS上开启／关闭／重启Mysql服务 | Hexo</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
 
@@ -233,7 +233,7 @@ Problem Issue #2 - mysql.server command not">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Startseite
           </a>
         </li>
       
@@ -243,7 +243,7 @@ Problem Issue #2 - mysql.server command not">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archiv
           </a>
         </li>
       
@@ -253,7 +253,7 @@ Problem Issue #2 - mysql.server command not">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Kategorien
           </a>
         </li>
       
@@ -263,7 +263,7 @@ Problem Issue #2 - mysql.server command not">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -323,9 +323,9 @@ Problem Issue #2 - mysql.server command not">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-16T10:14:47+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-16T10:14:47+08:00">
                 2017-05-16
               </time>
             
@@ -335,28 +335,6 @@ Problem Issue #2 - mysql.server command not">
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Mysql-MacOS/" itemprop="url" rel="index">
-                    <span itemprop="name">Mysql MacOS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -400,7 +378,8 @@ Problem Issue #2 - mysql.server command not">
 <p> 原因排查：</p>
 <ol>
 <li><p>关于my.cnf文件<br>根据mysql forum上的描述，OSX系统中的mysql默认不需要my.cnf配置文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">By default, the OS X installation does not use a my.cnf, and MySQL just uses the default values.</div><div class="line">To set up your own my.cnf, you could just create a file straight in /etc,</div><div class="line">or do the following ...</div></pre></td></tr></table></figure>
+<blockquote><p>By default, the OS X installation does not use a my.cnf, and MySQL just uses the default values.<br>To set up your own my.cnf, you could just create a file straight in /etc,<br>or do the following …</p>
+</blockquote>
 </li>
 <li><p>查看错误日志（后缀<code>.err</code>）<br>日志文件位于<code>／usr/local/mysql/your_computer_name.local.err</code></p>
 </li>
@@ -453,6 +432,14 @@ Problem Issue #2 - mysql.server command not">
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+            <a href="/tags/MacOS/" rel="tag"># MacOS</a>
+          
+        </div>
       
 
       
@@ -520,10 +507,10 @@ Problem Issue #2 - mysql.server command not">
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
+            Übersicht
           </li>
         </ul>
       
@@ -544,7 +531,7 @@ Problem Issue #2 - mysql.server command not">
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">7</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -554,12 +541,21 @@ Problem Issue #2 - mysql.server command not">
             
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
           
 
         </nav>
@@ -623,11 +619,11 @@ Problem Issue #2 - mysql.server command not">
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
